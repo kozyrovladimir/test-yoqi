@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Search from "./components/search";
+import SearchBar from "./components/searchBar";
 import AppBar from "./components/appBar";
 import {theme} from './components/appTheme';
 import Button from '@material-ui/core/Button';
@@ -11,8 +11,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <div className="App">
                 <AppBar />
-                <Search/>
-                <Button variant="contained">Contained</Button>
+                <SearchBar />
             </div>
         </ThemeProvider>
     );
